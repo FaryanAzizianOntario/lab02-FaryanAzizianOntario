@@ -12,7 +12,7 @@ def seconds_to_hms(total_seconds):
     minutes = (total_seconds % 3600) // 60
     seconds = total_seconds % 60
 
-    return f"{hours:02d} :{minutes:02d} :{seconds:02d}"
+    return f"{hours:0d}:{minutes:02d}:{seconds:02d}"
 
 
 def admission_price(age):
@@ -63,7 +63,7 @@ def total_of_positives(numbers):
 def main():
     # Optional scratch space - use this to try your functions with sample values.
     # Uncomment a line and run `python lab02.py` to see the result.
-    # print(seconds_to_hms(3661))            # 1:01:01
+    #print(seconds_to_hms(3661))            # 1:01:01
     # print(admission_price(10))             # 8
     # print(sum_multiples(10))               # 23
     # print(total_of_positives([1, -2, 3]))  # 4
